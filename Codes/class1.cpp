@@ -6,7 +6,7 @@ class Animal
     // data member
     //  public, private, protected  (access modiofier)
 public:
-    int a;
+    int a; // instance variable
     float b;
     // member function
     void print_data(int a, float b)
@@ -18,6 +18,7 @@ public:
 int main()
 {
     Animal obj1;
+    cout << sizeof(obj1) << endl;
     obj1.a = 10;
     obj1.b = 23.5;
     obj1.print_data(obj1.a, obj1.b);
